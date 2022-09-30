@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".ut01.ex02.presentation.Ut01Ex02Activity"
+    android:layout_margin="40dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iconLeon"
+        android:layout_width="@dimen/size_image"
+        android:layout_height="@dimen/size_image"
+        android:layout_marginTop="70dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/ic_lion" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/fecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fecha: 01/01/2022"
+            android:layout_marginTop="70dp"
+            android:layout_marginStart="@dimen/marginFotoLineas"/>
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Titulo"
+            android:layout_marginTop="@dimen/marginTopLineas"
+            android:layout_marginStart="@dimen/marginFotoLineas"/>
+
+        <TextView
+            android:id="@+id/contenido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="ContenidoContenidoContenidoContenidoContenidoContenidoContenidoContenidoContenidoContenidoContenidoContenidoContenidoContenido"
+            android:layout_marginTop="@dimen/marginTopLineas"
+            android:layout_marginStart="@dimen/marginFotoLineas"/>
+
+    </LinearLayout>
+
+</LinearLayout>
