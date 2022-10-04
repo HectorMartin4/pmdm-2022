@@ -1,92 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ut01.ex02.presentation.Ut01Ex02bActivity"
-    android:layout_margin="30dp"
-    android:orientation="vertical">
+    android:layout_margin="30dp">
 
 
     <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/fotoGrande"
         android:layout_width="match_parent"
         android:layout_height="@dimen/size_image"
-        android:scaleType="fitCenter"
         app:srcCompat="@drawable/antique_ornament_frame_02" />
 
     <TextView
+        android:id="@+id/tit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="TituloTiutloTitulo"
         android:textAlignment="center"
         android:maxLines="1"
         android:ellipsize="end"
-        android:textSize="30sp">
-    </TextView>
+        android:textSize="30sp"
+        android:layout_below="@id/fotoGrande"/>
 
     <TextView
+        android:id="@+id/descripcion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:maxLines="2"
-        android:text="DescripcionDescripcionDescripcionDescripcionDescripcionDescripcionDescripcionDescripcionDescripcionDescripcionDescripcionDescripcionDescripcionDescripcionDescripcion">
+        android:layout_below="@id/tit"
+        android:text="DescripcionDescripcionDescripcionDescripcionDescripcionDescripcionDescripcionDescripcionDescripcionDescripcionDescripcionDescripcionDescripcionDescripcionDescripcion"/>
 
-    </TextView>
+    <ImageView
+        android:id="@+id/star1"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:srcCompat="@drawable/estrella_vacia"
+        app:tint="@color/yellow"
+        android:layout_below="@id/descripcion"/>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp">
+    <ImageView
+        android:id="@+id/star2"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:srcCompat="@drawable/estrella_vacia"
+        app:tint="@color/yellow"
+        android:layout_below="@id/descripcion"
+        android:layout_toEndOf="@id/star1"/>
 
+    <ImageView
+        android:id="@+id/star3"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:srcCompat="@drawable/estrella_vacia"
+        app:tint="@color/yellow"
+        android:layout_below="@id/descripcion"
+        android:layout_toEndOf="@id/star2"/>
 
-        <ImageView
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            app:srcCompat="@drawable/estrella_vacia"
-            app:tint="@color/yellow"/>
+    <ImageView
+        android:id="@+id/star4"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:srcCompat="@drawable/estrella_vacia"
+        app:tint="@color/yellow"
+        android:layout_below="@id/descripcion"
+        android:layout_toEndOf="@id/star3"/>
 
-        <ImageView
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            app:srcCompat="@drawable/estrella_vacia"
-            app:tint="@color/yellow"/>
-
-        <ImageView
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            app:srcCompat="@drawable/estrella_vacia"
-            app:tint="@color/yellow"/>
-
-        <ImageView
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            app:srcCompat="@drawable/estrella_vacia"
-            app:tint="@color/yellow"/>
-
-        <ImageView
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            app:srcCompat="@drawable/estrella_vacia"
-            app:tint="@color/yellow" />
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="right">
-
-            <ImageView
-
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                app:srcCompat="@drawable/favorite"
-                app:tint="@color/red"/>
-
-        </LinearLayout>
-
-    </LinearLayout>
+    <ImageView
+        android:id="@+id/star5"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:srcCompat="@drawable/estrella_vacia"
+        app:tint="@color/yellow"
+        android:layout_below="@id/descripcion"
+        android:layout_toEndOf="@id/star4"/>
 
 
 
+    <ImageView
+
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:srcCompat="@drawable/favorite"
+        app:tint="@color/red"
+        android:layout_below="@id/descripcion"
+        android:layout_toEndOf="@id/star5"/>
 
 
 
-</LinearLayout>
+
+
+
+
+</RelativeLayout>
