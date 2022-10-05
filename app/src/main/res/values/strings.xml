@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">PMDM</string>
     <string name="title">Hola Mundo</string>
+    <string name="tutlo">Pack sorpresa</string>
+    <string name="descripcion">Recogida hoy: 00:14 – 23:59</string>
+    <string name="rate">2.7</string>
+    <string name="distancia">4,1 Km</string>
+    <string name="precio">2.99 €</string>
+    <string name="disponibilidad">3 Disponible(s)</string>
+    <string name="nombreTienda">Cheema fruteria - General Ricardos - Uraasdfadfasdfasdfadfsdfa</string>
 </resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ut01.ex04.Ut01Ex04Activity"
+    android:layout_margin="@dimen/marginApp">
+
+    <RelativeLayout
+        android:id="@+id/background"
+        android:layout_width="@dimen/frutasWidth"
+        android:background="@drawable/fruteria"
+        android:layout_height="@dimen/frutasHeight">
+
+        <ImageView
+            android:id="@+id/ciruloVerde"
+            android:layout_width="@dimen/circuloWidth"
+            android:layout_height="@dimen/circuloHeigh"
+            android:src="@drawable/ic_green_circle"
+            android:layout_alignParentBottom="true"/>
+
+        <TextView
+            android:id="@+id/disponibles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/disponibilidad"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nombreTienda"
+            android:maxLines="2"
+            android:textStyle="bold"
+            android:ellipsize="end"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_toEndOf="@id/ciruloVerde"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            app:srcCompat="@drawable/favorite"
+            app:tint="@color/white"
+            android:layout_alignParentEnd="true"/>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tutlo"
+        android:layout_below="@id/background"
+        android:layout_marginTop="@dimen/marginTopText"/>
+
+    <TextView
+        android:id="@+id/descripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/descripcion"
+        android:layout_below="@+id/titulo"
+        android:layout_marginTop="@dimen/marginTopText"/>
+    />
+
+    <ImageView
+        android:id="@+id/star2"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:srcCompat="@drawable/estrella_vacia"
+        app:tint="@color/yellow"
+        android:layout_below="@id/descripcion"
+        android:layout_marginTop="@dimen/marginTopText"/>
+    />
+
+    <TextView
+        android:id="@+id/rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rate"
+        android:layout_toEndOf="@id/star2"
+        android:layout_below="@id/descripcion"
+        android:layout_marginTop="@dimen/marginTopNum"/>
+    />
+
+    <TextView
+        android:id="@+id/distancia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/distancia"
+        android:layout_toEndOf="@id/rate"
+        android:layout_below="@id/descripcion"
+        android:layout_marginStart="@dimen/marginKm"
+        android:layout_marginTop="@dimen/marginTopNum"/>
+    />
+
+    <TextView
+        android:id="@+id/precio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/precio"
+        android:layout_toEndOf="@id/distancia"
+        android:layout_below="@id/descripcion"
+        android:layout_marginStart="@dimen/marginPrecio"
+        android:layout_marginTop="@dimen/marginTopNum"/>
+
+
+
+
+
+</RelativeLayout>
