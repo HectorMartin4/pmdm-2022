@@ -9,4 +9,6 @@ class Ut01Ex07Activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ut01_ex07)
     }
+
+
 }
