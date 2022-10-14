@@ -13,4 +13,14 @@
     <dimen name="marginTopText">15dp</dimen>
     <dimen name="marginTopNum">20dp</dimen>
 
+
+
+    <!-- Ex05 -->
+
+
+    <dimen name="icon_size">20dp</dimen>
+    <dimen name="margin_app">16dp</dimen>
+    <dimen name="both_spacing">8dp</dimen>
+    <dimen name="vertical_spacing">8dp</dimen>
+
 </resources>
