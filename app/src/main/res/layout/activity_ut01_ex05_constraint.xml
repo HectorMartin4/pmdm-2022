@@ -18,27 +18,36 @@
         tools:background="@drawable/ic_launcher_background"
         />
 
-    <LinearLayout
+    <ImageView
+        android:id="@+id/fondo_gris"
+        android:background="@color/white_50"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:padding="@dimen/both_spacing"
+        android:layout_margin="@dimen/both_spacing"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+    <ImageView
+        android:src="@drawable/ic_lion"
+        android:layout_width="@dimen/icon_size"
+        android:layout_height="@dimen/icon_size"
+        app:layout_constraintStart_toEndOf="@+id/numero1"
+        app:layout_constraintTop_toTopOf="@+id/numero1"
+        />
+
+    <TextView
+        android:id="@+id/numero1"
+        tools:text="1º"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/both_spacing"
-        android:padding="@dimen/both_spacing"
-        android:background="@color/white_50"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <TextView
-            tools:text="1º"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-        <ImageView
-            android:src="@drawable/ic_lion"
-            android:layout_width="@dimen/icon_size"
-            android:layout_height="@dimen/icon_size"/>
-
-
-    </LinearLayout>
+        app:layout_constraintStart_toStartOf="@+id/fondo_gris"
+        app:layout_constraintTop_toTopOf="@+id/fondo_gris"
+        app:layout_constraintBottom_toBottomOf="@id/fondo_gris"
+        android:layout_marginStart="@dimen/both_spacing"
+        />
 
     <TextView
         android:id="@+id/titulo"
